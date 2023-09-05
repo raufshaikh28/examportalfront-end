@@ -12,6 +12,10 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
+            "options": {
+             "allowedCommonJsDependencies": [
+            "lodash"
+           ],
           "options": {
             "outputPath": "dist/examfront",
             "index": "src/index.html",
