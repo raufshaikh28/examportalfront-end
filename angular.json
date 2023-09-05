@@ -12,10 +12,6 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
-            "options": {
-             "allowedCommonJsDependencies": [
-            "lodash"
-           ],
           "options": {
             "outputPath": "dist/examfront",
             "index": "src/index.html",
@@ -23,6 +19,7 @@
             "polyfills": [
               "zone.js"
             ],
+            "allowedCommonJsDependencies": ["lodash"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
